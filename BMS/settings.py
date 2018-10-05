@@ -26,7 +26,7 @@ SECRET_KEY = '#kx%vv+%d^&t-%l982fjclx$b@*xobogngymipdci!v85$ap17'
 HEROKU
 '''
 import django_heroku
-django_heroku.settings(locals())
+
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'user',
     'django_heroku',
     'BinceeAssets',
     'customer',
@@ -153,4 +154,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
+django_heroku.settings(locals())

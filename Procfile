@@ -1,1 +1,1 @@
-web: gunicorn BMS.wsgi:bincee-api --log-file -
+web: gunicorn BMS:bincee-api
