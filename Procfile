@@ -1,1 +1,1 @@
-web: gunicorn BMS:bincee-api
+web: gunicorn BMS.wsgi:application
