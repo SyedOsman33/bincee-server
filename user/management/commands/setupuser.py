@@ -12,7 +12,7 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument('email', nargs='+', type=str)
         parser.add_argument('password', nargs='+', type=str)
-        parser.add_argument('customer', nargs='+', type=int)
+        # parser.add_argument('customer', nargs='+', type=int)
         parser.add_argument('role', nargs='+', type=int)
         parser.add_argument('modified_by', nargs='+', type=int)
         
@@ -20,14 +20,14 @@ class Command(BaseCommand):
         try:
             email = options['email'][0]
             password = options['password'][0]
-            customer = options['customer'][0]
+            # customer = options['customer'][0]
             role = options['role'][0]
             modified_by = options['modified_by'][0]
             
             u = User()
             u.email = email
             u.set_password(password)
-            u.customer_id = customer
+            # u.customer_id = customer
             u.is_staff = False
             u.is_active = True
             u.modified_by_id = modified_by
