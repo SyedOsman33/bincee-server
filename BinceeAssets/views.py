@@ -29,7 +29,7 @@ def add_assets(request):
     type_id = int(get_data_param(request, 'type', 0))
 
 
-    if user.role.id != RoleTypeEnum.ADMIN:
+    if user.role.id != RoleTypeEnum.ADMIN or RoleTypeEnum.MANAGER:
         http_status = HTTP_SUCCESS_CODE
         response_body[RESPONSE_MESSAGE] = 'You do not have sufficient privileges to perform this action.'
         response_body[RESPONSE_STATUS] = HTTP_ERROR_CODE
