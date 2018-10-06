@@ -33,7 +33,7 @@ class Module(models.Model):
 class Role(models.Model):
     name = models.CharField(unique=True, max_length=30)
     # customer = models.ForeignKey(Customer, blank=True, null=True)
-    modified_by = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='role_modified_by', null=True, blank=True)
+    # modified_by = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='role_modified_by', null=True, blank=True)
     modified_datetime = models.DateTimeField(blank=True, null=True)
     created_datetime = models.DateTimeField(auto_now_add=True, db_index=True)
     end_datetime = models.DateTimeField(blank=True, null=True)

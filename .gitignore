@@ -60,6 +60,8 @@ Temporary Items
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
+.idea/**/workspace.xml
+
 
 # Gradle:
 .idea/**/gradle.xml
@@ -129,7 +131,7 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/linux,macos,windows,pycharm
 
 # Project files and directories
-hypernet-backend/backend/local_settings.py
+BMS/BMS/local_settings.py
 .idea/
 
 ;;extensions to ignore
@@ -139,10 +141,3 @@ hypernet-backend/backend/local_settings.py
 *.pot
 
 /BMS/local_settings.py
-
-/hypernet-angular/node_modules/*
-/hypernet-angular/dist/*
-/hypernet-angular/package-lock.json
-/hypernet-angular/dist.zip
-
-env/

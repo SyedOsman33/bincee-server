@@ -151,6 +151,13 @@ USE_L10N = True
 USE_TZ = True
 
 
+try:
+    from .local_settings import *
+
+    INSTALLED_APPS += LOCAL_INSTALLED_APPS
+except ImportError:
+    pass
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
