@@ -1,4 +1,4 @@
-
+.vscode
 # Created by https://www.gitignore.io/api/linux,macos,windows,pycharm
 
 ### Linux ###
@@ -131,7 +131,8 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/linux,macos,windows,pycharm
 
 # Project files and directories
-BMS/BMS/local_settings.py
+BMS/__pycache__
+/BMS/local_settings.py
 BINCEE
 ENV
 .idea/
@@ -142,4 +143,3 @@ ENV
 *.log.*
 *.pot
 
-/BMS/local_settings.py
