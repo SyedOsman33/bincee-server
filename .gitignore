@@ -132,6 +132,8 @@ $RECYCLE.BIN/
 
 # Project files and directories
 BMS/BMS/local_settings.py
+BINCEE
+ENV
 .idea/
 
 ;;extensions to ignore
