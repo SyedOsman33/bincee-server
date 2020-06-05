@@ -1,5 +1,5 @@
 decorator==4.3.0
-Django==1.11
+Django==1.11.29
 django-common-helpers==0.9.1
 django-cors-headers==2.1.0
 django-enumfield==1.3b2
