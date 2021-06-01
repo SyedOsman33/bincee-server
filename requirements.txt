@@ -58,6 +58,6 @@ requests-toolbelt==0.7.0
 simplegeneric==0.8.1
 sip==4.19.8
 six==1.11.0
-urllib3==1.22
+urllib3==1.26.5
 webencodings==0.5.1
 wrapt==1.10.11
